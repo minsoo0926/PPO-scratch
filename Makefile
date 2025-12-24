@@ -11,7 +11,7 @@ KEEP_MODELS ?= 5
 MODEL ?= ppo_model_final.pth
 
 # Python command (adjust if using different environment)
-PYTHON ?= python
+PYTHON ?= uv run
 
 # Colors for output
 GREEN = \033[0;32m
@@ -38,7 +38,7 @@ help: ## Show this help message
 
 setup: ## Setup Python environment and install dependencies
 	@echo "$(BLUE)Setting up environment...$(NC)"
-	pip install -r requirements.txt
+	uv sync
 	@echo "$(GREEN)Setup complete!$(NC)"
 
 install: setup ## Alias for setup

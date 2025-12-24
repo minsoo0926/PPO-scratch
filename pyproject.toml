@@ -1,0 +1,16 @@
+[project]
+name = "ppo-scratch"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ale-py>=0.11.2",
+    "gymnasium[all]>=1.2.3",
+    "matplotlib>=3.10.8",
+    "mujoco>=3.4.0",
+    "numpy>=2.4.0",
+    "stable-baselines3>=2.7.1",
+    "swig>=4.4.0",
+    "torch>=2.9.1",
+]
